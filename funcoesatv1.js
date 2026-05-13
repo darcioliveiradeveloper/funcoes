@@ -12,7 +12,7 @@ function calcularFatorial(n) { // A função 'calcularFatorial' é definida para
     // Verificamos se o número é 0, pois matematicamente o fatorial de 0 é sempre 1
     if (n === 0) { // Se 'n' for igual a 0, retornamos 1, pois 0! é definido como 1
         return 1; // Se for 0, a função para aqui e retorna 1
-    }
+    } // Fim da verificação para o caso de fatorial de 0
 
     // Criamos uma variável para guardar o valor da multiplicação. 
     // Começamos com 1 porque qualquer número multiplicado por 1 não se altera.
@@ -28,13 +28,12 @@ function calcularFatorial(n) { // A função 'calcularFatorial' é definida para
         // 2ª volta: resultado = 1 * 2 (2)
         // 3ª volta: resultado = 2 * 3 (6)
         resultado *= i; // Isso é equivalente a resultado = resultado * i
-    }
+    } // Fim do laço de multiplicação, onde 'resultado' acumula o valor do fatorial de 'n'
 
     // Após terminar o laço, retornamos o valor final acumulado
     return resultado;// Retorna o resultado do fatorial para o número 'n'
-}
+} // Fim da definição da função calcularFatorial
 
 // Chamamos a função passando o número 5 e exibimos o resultado no console
 console.log("Fatorial de 5 é: " + calcularFatorial(5)); // Deve imprimir 120
 console.log(calcularFatorial(5)); // Deve retornar 120
-

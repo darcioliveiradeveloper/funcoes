@@ -40,4 +40,4 @@ const rl = readline.createInterface({ // Criamos uma interface de leitura usando
 rl.question("Digite a Quantidade de posições de Fibonacci que deseja ver ? ", (posicao) => { // Solicita ao usuário a quantidade de posições da sequência de Fibonacci que deseja ver
   console.log(fibonacci(parseInt(posicao))); // Converte a entrada para inteiro e chama a função
   rl.close(); // Fecha a interface de leitura após exibir o resultado
-});
+}); // Fim da função de leitura de entrada do usuário

@@ -7,9 +7,9 @@
 
 function ePrimo(n) {
     // Verificamos se o número é menor ou igual a 1, pois números menores ou iguais a 1 não são primos
-    if (n <= 1) {
+    if (n <= 1) { // Verificamos se 'n' é menor ou igual a 1, pois números menores ou iguais a 1 não são considerados primos
         return false; // Retorna falso para números menores ou iguais a 1
-    }
+    } // Fim da verificação para números menores ou iguais a 1
 
     // Criamos um laço que começa em 2 e vai até a raiz quadrada de 'n'
     // Isso é eficiente porque um número não pode ser dividido por um fator maior que sua raiz quadrada sem ter um fator correspondente menor que ela
@@ -18,12 +18,12 @@ function ePrimo(n) {
         // Verificamos se 'n' é divisível por 'i'
         if (n % i === 0) { // Se 'n' for divisível por 'i', então 'n' não é primo
             return false; // Se for divisível, então 'n' não é primo, retornamos falso
-        }
-    }
+        } // Fim da verificação de divisibilidade
+    } // Fim do laço de verificação de divisores
 
     // Se o laço terminar sem encontrar nenhum divisor, então 'n' é primo
     return true; // Retorna verdadeiro para números primos
-}
+} // Fim da definição da função ePrimo
 
 // Testamos a função com alguns exemplos
 console.log("7 é primo? " + ePrimo(7)); // Deve retornar true
